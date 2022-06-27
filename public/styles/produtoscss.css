@@ -1,0 +1,251 @@
+body{ 
+	background-color: rgb(244,240,230);
+	overflow-x:hidden;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/*Produto*/
+
+.container{
+	width: 85%;
+	height: 44rem;
+	margin: 2.4rem auto;
+}
+
+.name_item{
+	width: 100%;
+	height: 4%;
+	margin-bottom: 2%;
+	color: rgb(90 , 87, 82);
+
+	text-align: left;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.6rem;
+	/*letter-spacing: .1rem;*/
+}
+
+.box{
+	top: 1rem;
+	display: flex;
+	width: 100%;
+	height: 92%;
+	justify-content: space-between;
+}
+
+
+.produto_container{
+
+	display: table-cell;
+	width: 44%;
+	max-width: 395px;
+	height: 100%;
+
+}
+.produto {
+	background-color: white;
+	width: 100%;
+	height: 70%;
+	align-items: center;
+}
+
+.item_grande{
+	position: relative;
+
+	width: 100%;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.descrição {
+	justify-content: center;
+	margin-top: 5%;
+	background-color: white;
+	width: 100%;
+	height: 28%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	align-items: center;
+	box-sizing: border-box;
+	border: 1.4rem solid transparent;
+	border-top: 0;
+}
+
+.titleDescription {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+	margin-top: 5%;
+
+}
+
+.p{
+	position: relative;
+	text-align: justify;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 14px;
+
+	margin-top: 5%;
+	padding-right:  15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.preço{
+	width: 62%;
+	height: 95%;
+	margin-top: 1%;
+	margin-left: 5%;
+}
+
+.melhor_oferta{
+	width: 100%;
+	height: 5.5rem;
+}
+.div1_melhor{
+	margin-top: 5%;
+	width: 100%;
+	height: 66%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.p1_melhor{
+	color: rgb(239, 95, 34);
+	font-family: Arial;
+	font-size: 2.8rem;
+	font-weight: bold;
+	
+	margin-right: 2rem;
+	margin-top: 0px;
+}
+
+.p2_melhor{
+	width: 100%;
+	height: 32%;
+	position: relative;
+	text-align: center;
+	color: rgb(179, 175, 166);
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.outros{
+	height: 85%;
+	width: 100%;
+	top: 2%;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.outros_valores{
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	height: 7rem;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.div1, .div2, .div3{
+	width: 33%;
+	height: 76%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.div1, .div2{
+	border-right: 2px solid rgb(77, 137, 102);
+}
+
+
+.p_div1{
+	color: rgb(239, 95, 34);
+	font-family: Arial;
+	font-size: 2.8rem;
+	font-weight: bold;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: relative;
+}
+
+.div2{
+	display: table;
+}
+
+.logo{
+	margin-top: 0.6rem;
+	margin-bottom: 0.5rem;
+	width: 3rem;
+	
+}
+
+.p2{
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 1.1rem;
+	display : inline-block;
+	vertical-align : middle;
+	line-height : 20px;
+	padding: 15%;
+	/* margin-top: 0px; */
+}
+.div3{
+	display: flex;
+}
+
+.adicionar_sacola{
+	font-weight: bold;
+	font-family: monospace;
+	color: white;
+	width: 12rem;
+	height: 3rem;
+	position: relative;
+	background-color: rgb(85, 142, 109);
+	border-radius: 0.8rem;
+	border: 0;
+	font-size: 1rem;
+	cursor: pointer;	
+}
+
+.adicionar_sacola:hover{
+	background-color: rgb(60, 99, 76);
+	
+}

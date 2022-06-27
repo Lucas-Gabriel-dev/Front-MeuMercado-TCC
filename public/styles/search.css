@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(244, 240, 230);
+    height: 78rem;
+}
+
+/*Conteúdo*/
+
+.container{
+    width: 86%;
+    height: 80%;
+    /*background-color: pink;*/
+    top: 3%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.div1{
+    height: 6%;
+}
+
+.p1{
+    margin-bottom: .4rem;
+    left: .6rem;
+    color: gray;
+    font-weight: bold;
+    font-family: arial;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: default;
+}
+
+.p2{
+    position: relative;
+    color: rgb(242, 100, 32);
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+.div2{
+    position: relative;
+    height: 90%;
+}
+
+.box{
+    width: 94%;
+    height: 40%;
+    margin: 0 auto;
+    margin-top: 2.2%;
+    display: flex;
+    position: relative;
+
+    justify-content: space-around;
+}
+
+
+
+.resultado{
+    width:22%;
+    /* height: 100%; */
+    background-color: white;
+    padding: .8rem;
+    box-sizing: border-box;
+    cursor: pointer;   
+    transition-duration: .2s;
+    box-shadow: 1px 1px 20px rgb(231, 230, 230);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado:hover{
+    width: 23%;
+    /* height: 103%; */
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 20px rgb(167, 167, 167);
+}
+
+.img{
+    margin-top: 1%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 44%;
+
+    /* padding: 15%; */
+}
+
+.marca{
+    width: 100%;
+    height: 10%;
+    margin-top: 6%;
+    text-align: left;
+    color: rgb(54, 53, 52);
+    font-weight: bold;
+    font-family: arial;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.preço{
+    width: 92%;
+    height: 12%;
+    margin-top: auto;
+    text-align: left;
+    color: rgb(54, 53, 52);
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+}
+
+#paginate .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+}
+
+#paginate .controls div {
+    cursor: pointer;
+
+    /* border: 1px solid #eee; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14;
+}
+
+#paginate .controls div:not(.numbers),
+#paginate .controls div.numbers div{
+    width: 40px;
+    height: 40px;
+}
+
+#paginate .controls div.numbers div:hover,
+#paginate .controls div.numbers div.active {
+    color: var(--primary);
+}
+
+
+
+
+
+
+

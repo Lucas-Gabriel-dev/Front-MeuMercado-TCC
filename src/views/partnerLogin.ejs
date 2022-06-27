@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/styles/logincss.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="/scripts/modules/login.js"></script>
+    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+
+
+	<title>Meu Mercado</title>
+</head>
+<body>
+	<div class="container">
+		<div class="div1">
+			<FORM name="formuser" action="javascript: LogIn()" method="post">
+				<img src="/images/icon.png" class="logo_mobile">
+				<img src="/images/login-txt1.png" class="login-txt1">
+				<img src="/images/login-txt2.png" class="login-txt2">
+				<img src="/images/lojista.png" class="login-txt3 partner"><br class="br">
+				<p id="error" style="text-align: center; color: red;"></p>
+			
+			
+				
+	 			<div class="div_input">
+                    <input type="text" name="email" id="email" class="input" required>
+                    <img src="/images/email.png" class="icon1">
+                    <label for="email" class="label">E-mail:</label>
+                </div><br><br><br>
+                
+
+                <div class="div_input">
+                    <input type="password" name="senha" id="password" class="input" required>
+                    <img src="/images/cadeado.png" class="icon2">
+                    <label for="senha" class="label">Senha:</label>
+                    <p class="esqueci_senha">esqueci minha senha</p>
+                </div>
+                <br>
+	    		
+	    		<INPUT TYPE="submit" VALUE="acessar" class="button1"></INPUT>  				
+  			</FORM>
+  			
+  				<hr><br>
+  				<p class="p4">Não tem uma conta? Cadastre-se</p>
+		</div>
+		
+		<div class="div2">
+			<img src="/images/mercado.png" class="img_cadastrar">
+			<img src="/images/fundo_mercado.png" class="fundo_mercado">
+
+			<div class="cadastrar">
+				<img src="/images/icon.png" class="logo">
+				<p class="p3">Não tem uma conta?</p>
+				<INPUT TYPE="submit" VALUE="cadastre-se" id="buttonRegister" class="button2"></INPUT>
+
+				<INPUT TYPE="submit" VALUE="Sou Cliente" id="buttonClient" class="button2"></INPUT>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

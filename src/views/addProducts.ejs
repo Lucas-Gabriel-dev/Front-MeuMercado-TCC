@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/styles/newProducts.css">
+    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+
+    <script defer src="/scripts/modules/addProducts.js"></script>
+
+    <title>Adicionar Produtos</title>
+</head>
+<body>
+    <!--Pesquisa-->
+	<div class="pesquisa">
+		<img src="../images/icon.png" class="icon"> 
+        <p class="p1">Central dos Mercados</p>			
+	</div>
+        <!--Nav Bar-->      
+    <ul class="nav">
+        <li><a href="/">PÁGINA INICIAL</a></li>
+        <li><a href="/addProducts">ADICIONAR PRODUTOS</a></li>
+        <li><a href="/myproducts:1">PRODUTOS</a></li>
+    </ul>
+
+
+    <div class="container">
+
+        <img src="../images/cad_produto.png" class="imgcad_produto" alt="">
+
+        <div class="box">
+
+            <form action="" class="div1">
+                <div class="div_input">
+                    <label class="label">Nome do Produto:</label>
+                
+                    <!-- <input type="search" name="nome" id="texto" list="historico" class="input" required> -->
+                    <input type="search" id="texto" list="historico" class="input" required><br>
+                </div>
+
+                <div id="options">
+                    <datalist id="historico" style="height:5.1em;overflow:hidden">
+                        <option value="arroz" class="Lucas"></option>
+                    </datalist> 
+                </div>
+            
+                
+                <div class="div_input div_desc">
+                    <label class="label label_desc">Descrição:</label>
+                
+                    <textarea name="descrição" id="description" class="input" style="resize: none" disabled></textarea>
+                
+                </div>
+
+                <div class="div_input">
+                    <label class="label label_desc">KG/L:</label>
+                
+                    <label id="weight" class="input" disabled>
+                </div>
+
+                <div class="div_input">
+                    <label class="label">Categoria:</label>
+                
+                    <label type="text" id="category" class="input">
+                
+                </div>
+                
+                <div class="div_input">
+                    <label class="label">Preço do Produto:</label>
+                
+                    <input type="number" name="nome" id="price" class="input">
+                
+                </div>
+                
+                <div class="div_input">
+                    <label class="label">Quantidade em Estoque:</label>
+                
+                    <input type="number" name="nome" id="estoque" class="input" required>
+                
+                </div>
+                
+                
+                
+            </form>
+
+
+            <div class="div2">
+                
+                <div class="input-file-upload upload">
+                    <img class="upload_img" id="file_upload">
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="box_publicar">
+            <input type="button" class="button2" id="publish" value="PUBLICAR">
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

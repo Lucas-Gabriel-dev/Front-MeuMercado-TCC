@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/Newcss.css">
+    <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+    
+
+    <title>Carrinho</title>
+</head>
+<body>
+    <!--Pesquisa-->
+    <div class="pesquisa">
+        <img src="../images/icon.png" class="icon">
+        <div class="container_pesquisar">
+            
+            <input type="text" class="search">
+        </div>
+    </div>
+
+
+
+    <!--Nav Bar-->
+    <ul class="nav">
+      <li><a href="#">PÁGINA INICIAL</a></li>
+      <li><a href="#">CASA</a></li>
+      <li><a href="#">CONDIMENTOS</a></li>
+      <li><a href="#">GRÃOS</a></li>
+      <li><a href="#">FÁRMACIA</a></li>
+      <li><a href="#">HORTIFRUTI</a></li>
+      <li><a href="#">TELA1</a></li>
+      <li><a href="#">TELA2</a></li>
+      <li><a href="#">TELA3</a></li>
+      <li><a href="#">TELA4</a></li>
+    </ul>
+
+
+    <!--Conteúdo-->
+    <div class="container">
+        <img src="../images/carrinho.png" alt="" class="img_div1">
+        <div class="div2">
+            <div class="box_produtos">
+
+               <div class="item">
+                    <!--Imagem do Produto-->
+                    <img src="../images/pote_de_molho.png" class="img_item" alt="">
+                    <!--Descrição do Produto-->
+                    <p class="p1_elements">Molho de Tomate - Marca <i>x</i></p>
+                    <!--Quantidade-->
+                    <input type="number" min="1" class="quant">
+                    <!--Preço do Produto-->
+                    <p class="p1_elements" style="font-size: 1.5rem ;">R$ 5,99 </p>
+               </div>
+
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+               <div class="item"></div>
+
+
+
+
+
+
+            
+            </div>
+
+
+
+
+
+
+            <div class="box_pagamento">
+                
+
+                <div class="elements_div1">
+                    <p class="p2_elements">7 ITENS</p>
+                    <p class="p2_elements" style="text-align: right;">R$ 120,00</p>
+                </div>
+
+
+
+
+
+
+                <div class="elements_div2">
+                    <label class="label_elements">ENTREGA:</label><br>
+                    <select class="input_elements">
+                        <elects class="list" onchange="getSelectValue();" value="">
+                            <option value="">ENTREGA - PADRÃO R$ 5,00</option>
+                            <option value="">op2</option>
+                            <option value="">op3</option>
+                            <option value="">op4</option>
+                        </elects>
+                        </select>
+
+                        <script>
+                            
+                            function getSelectValue()
+                            {
+                                var selectedValue = document.getElementByClass("list").value;
+                                console.log(selectedValue);
+                            }
+                            getSelectValue();
+
+                        </script>
+                </div>
+
+
+                <div class="elements_div2">
+                    <label class="label_elements">FORMA DE PAGAMENTO:</label><br>
+                    <select class="input_elements">
+                        <elects class="list" onchange="getSelectValue();" value="">
+                            <option value="">CARTÃO - VISA</option>
+                            <option value="">op2</option>
+                            <option value="">op3</option>
+                            <option value="">op4</option>
+                        </elects>
+                        </select>
+
+                        <script>
+                            
+                            function getSelectValue()
+                            {
+                                var selectedValue = document.getElementByClass("list").value;
+                                console.log(selectedValue);
+                            }
+                            getSelectValue();
+
+                        </script>
+                </div>
+
+                <hr>
+
+
+
+
+
+
+
+                <div class="elements_div4">
+                    <p class="p3_elements">TOTAL</p>
+                    <p class="p3_elements" style="text-align: right;">R$ 120,00</p>
+                </div>
+
+                <div class="elements_div5">
+                    <p class="p3_elements">DESCONTOS</p>
+                    <p class="p3_elements" style="text-align: right;">R$ -20,00</p>
+                </div>
+                <br>
+                <div class="elements_div5">
+                    <p class="p2_elements">SUBTOTAL</p>
+                    <p class="p2_elements" style="text-align: right;">R$ 100,00</p>
+                </div>
+
+                <input type="button" class="button" value="COMPRAR">
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="div3">
+            <p class="p_voltar">← VOLTAR AO <i>MEU MERCADO</i></p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>  

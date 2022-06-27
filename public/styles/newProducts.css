@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* overflow: hidden; */
+
+}
+
+/*Pesquisar*/
+
+
+.pesquisa {
+
+    display: flex;
+    height: 5rem;
+    width: 30%;
+    margin-bottom: 0.2rem;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+    left: 10%;
+    width: 8rem;
+}
+
+.p1 {
+    position: absolute;
+    top: 40px;
+    left: 11.5rem;
+    width: 40rem;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.6rem;
+    color: rgb(77, 137, 102);
+
+}
+
+
+
+/*Nav Bar*/
+
+
+.nav {
+    width: 100%;
+    height: 38px;
+    background-color: rgb(200, 196, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+li {
+    padding: 0 1.5rem;
+}
+
+a {
+    font-weight: bold;
+    font-family: monospace;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(77, 137, 102);
+    font-size: 26px;
+    transition-duration: 0.2s;
+
+}
+
+
+
+
+/*Body*/
+
+.container {
+    width: 70%;
+    height: 43rem;
+    margin: 2.5rem auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.imgcad_produto {
+    height: 1.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.box {
+    height: 70%;
+    margin-top: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+/*div1*/
+.div1 {
+    height: 100%;
+    width: 58%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+
+.div_input{
+    justify-content: flex-end;
+	display: flex;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2.2rem;
+
+}
+
+.div_desc{
+    height: 6rem;
+}
+
+
+.input{
+    margin-left: .5rem;
+    border: .2rem solid rgb(85, 142, 109);
+    border-radius: .4rem;
+    outline: none;
+    color: black;
+    font-size: 17px;
+    width: 58%;
+    box-sizing: border-box;
+    height: 100%;
+    letter-spacing: 1px;
+    padding: .3rem;
+    padding-left: 1rem;
+    background-color: transparent;
+}
+
+.input:hover {
+	border-color: rgb(96, 110, 93);
+}
+
+.input:focus {
+	border-color: rgb(28, 28, 28);
+}
+
+
+
+
+.label{
+    width: 41%;
+    margin: auto 0;
+    text-align: right;
+    position: relative;
+    transition: .5s;
+    color: rgb(77, 137, 102);
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.label_desc{
+    margin: .8rem 0;
+}
+
+
+
+
+
+
+
+
+/*div2*/
+
+.div2 {
+    height: 100%;
+    width: 42%;
+    display: table-cell;
+    padding: 1%;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.button1, .button2{
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border-radius: .5rem;
+    font-family: monospace;
+    font-weight: bold;
+
+    margin-top: 8%;
+}
+.button1{
+    color: rgb(77, 137, 102);
+    width: 66%;
+    height: 2.5rem;
+    border: .3rem dashed rgb(77, 137, 102) ;
+    background-color: transparent;
+    font-size: 1.2rem;
+    top: .1rem;
+
+}
+
+.button1:hover {
+	color: rgb(241, 90, 34);
+    border-color: rgb(241, 90, 34);
+}
+
+.input-file-upload {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload_img{
+    width: 79%;
+    height: 22rem;
+    border: .2rem solid rgb(77, 137, 102);
+    top: 1.8rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .6rem;
+    object-fit: cover;
+    object-position: 50% 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input[type=file] {
+    /*opacity: 0; */
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 2.5rem;
+    left: 10px;
+
+}
+
+.upload-btn {
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+
+
+
+
+
+/*Div enviar*/
+.box_publicar{
+    width: 100%;
+    height: 10%;
+
+}
+
+.button2{
+    
+    width: 40%;
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    background-color: rgb(77, 137, 102);
+    font-size: 1.7rem;
+
+}
+
+.button2:hover{
+	background-color: rgb(60, 99, 76);
+}

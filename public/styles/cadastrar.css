@@ -1,0 +1,333 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+body{ 	
+	background-color: rgb(244,240,230);
+	overflow:hidden;
+	}
+
+.container{
+	border-radius: 13px;
+	display: flex;
+	background-color: rgb(244,240,230);
+	width: 950px;
+	height: 500px;
+	position: absolute;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: -3px 3px 20px black;
+}
+
+.div1 {
+	width: 65%;
+	height: 100%;
+}
+
+.cad_img{
+	width: 80%;
+	margin-left: 5%;
+	position: relative;
+	top: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+form{
+	padding-bottom: 5%;
+	height: 80%;
+	width: 70%;
+	position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#emailInvalid{
+	margin-bottom: 1%;
+
+	text-align: center;
+
+	color: red;
+}
+
+.div_input{
+	position: relative;
+
+}
+.input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(85, 142, 109);
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.div_flex{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.select{
+	color: rgb(140, 138, 129);
+}
+
+.input2{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(85, 142, 109);
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.label{
+	font-family: Arial;
+	color: rgb(140, 138, 129);
+    position: absolute;
+    top:  -1px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 16px;
+}
+.input:focus ~ .label,
+.input:valid ~ .label
+{
+	top: -15px;
+    font-size: 12px;
+    color: rgb(192, 188, 177);
+}
+
+.input2:focus ~ .label,
+.input2:valid ~ .label
+{
+	top: -15px;
+    font-size: 12px;
+    color: rgb(192, 188, 177);
+}
+
+.div_data{
+	margin-top: 10px; 
+	margin-bottom: 12px;
+}
+.label_data{
+	font-size: 16px;
+	font-family: serif;
+	color: rgb(140, 138, 129);
+}
+.data{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+.data:hover{
+	border: 1px solid rgb(85, 142, 109);
+	background-color: rgb(227, 223, 213);
+}
+.data:focus{
+	border: 1px solid rgb(85, 142, 109);
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+
+
+.button1, .button2{
+	font-weight: bold;
+	font-family: monospace;
+	color: white;
+	width: 150px;
+    height: 40px;
+    position: relative;
+	background-color: rgb(85, 142, 109);
+	border-radius: 6px;
+	border-color: transparent;
+	font-size: 25px;
+	left: 50%; 
+	transform: translateX(-50%);
+}
+
+.button2{
+    top: 38%;
+    transform: translate(-50%, -50%);
+}
+.button1:hover{
+	background-color: rgb(60, 99, 76);
+	cursor: pointer;
+}
+.button2:hover{
+	background-color: rgb(60, 99, 76);
+	cursor: pointer;
+}
+
+#a_div1{
+	text-decoration: none;
+}
+#a_div1 p{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-family: arial;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	width: 100%;
+	position: relative;
+	width: 100%;
+	background-color: rgb(85, 142, 109);
+	height: 5.4%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: .2rem;
+	border-bottom-left-radius: .5rem ;
+	margin-top: 2%;
+
+}
+#a_div1 p:hover{
+	color: rgb(24, 24, 24);
+}
+
+
+
+.div2{
+	width: 35%;
+	height: 100%;
+}
+
+.img_cadastrar{
+	width: 100%;
+	height: 100%;
+}
+.cadastrar{
+	width: 80%;
+	height: 80%;
+	position: relative;
+	left: 50%; top: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo{
+	position: relative;
+	left: 50%; top: 20%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+}
+
+
+
+.p3{
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	font-family: monospace;
+	color: white;
+	font-size: 26px;
+	left: 50%; top: 25%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/*mobile 
+
+já tem uma conta? logar*/
+.p4{
+	display: none;
+	font-weight: bold;
+	font-family: monospace;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgb(181, 189, 174);
+	position: relative;
+	width: 70%;
+	text-align: center;
+}
+
+.mobile{
+	display: none;
+}
+.fundo_mercado{
+	display: none;
+}
+
+
+/* .partner{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: monospace;
+
+	position: relative;
+	left: 0;
+
+	margin-left: 5%;
+	margin-top: 0px;
+	text-decoration: none;
+	color: rgb(60, 99, 76);
+	padding-bottom: 5%;
+}
+
+.partner:hover{
+	cursor: pointer;
+} */
+
+
+@media only screen and (min-width: 1px) and (max-width: 860px) 
+{
+body{
+	overflow: hidden;
+}
+.container{
+	border-radius: 0px;
+	width: 100%;
+	height: 100%;
+
+}
+.div1 {
+	position: absolute;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	width: 97%;
+	height: 80%;
+}
+.div2{
+	width: 100%;
+	height: 100%;
+}
+
+
+.cadastrar, .img_cadastrar{
+	display: none;
+}
+
+.fundo_mercado{
+	width: 100%;
+	height: 100%;
+	margin-bottom: -10px;
+}
+
+form{
+	width: 90%;
+}
+
+
+.br{
+	display: block;
+}
+}

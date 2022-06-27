@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/styles/registerPartner.css">
+        
+        <script defer src="/scripts/modules/registerPartner.js"></script>
+        <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+
+    	<title>Cadastrar Mercado</title>
+    </head>
+    <body>
+    	<div class="container">
+            
+    		<div class="div1">
+                <img src="../images/cad.png" class="cad_img">
+
+                <form action="javascript: registerPartner()" method="post">
+                    <p id="emailInvalid"></p>
+                    <img src="../images/lojista.png" alt="" class="titulo1">
+                    <div class="div_input">
+                        <input type="text" id="name" name="nome" class="input" required>
+                        <label for="nome" class="label">Nome completo:</label>
+                    </div><br>
+                    
+                    <div class="div_input">
+                        <input type="text" id="email" name="email" class="input" required>
+                        <label for="email" class="label">E-mail:</label>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="password" id="password" name="senha" class="input" required>
+                        <label for="senha" class="label">Senha:</label>
+                    </div><br>
+                        
+
+                    <div class="div_flex">
+                        <div class="div_input2">
+                            <input type="text" name="cpf" id="cpf" class="input2" required>
+                            <label for="cpf" class="label">CPF:</label>
+                        </div><br class="br">
+
+                        <div class="div_input2">
+                            <input type="text" name="RG" id="rg" class="input2" required>
+                            <label for="RG" class="label">RG:</label>
+                        </div>
+                    </div>
+
+                    <div class="div_flex">
+                        <div class="div_input2">
+                            <input type="text" name="telefone" class="input2" required>
+                            <label for="telefone" class="label">Telefone:</label>
+                        </div><br class="br">
+
+                        <div class="div_input2">
+                            <input type="text" name="orgao_emissor" id="orgao_emissor" class="input2" required>
+                            <label for="orgao_emissor" class="label">Orgão Emissor:</label>
+                        </div>
+                    </div><br>
+
+                    <img src="../images/mercado_titulo2.png" alt="" class="titulo2">
+                    <div class="div_input">
+                        <input type="text" name="cnpj" id="cnpj" class="input" required>
+                        <label for="cnpj" class="label">CNPJ:</label>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="text" name="nome_mercado" id="nameMarket" class="input" required>
+                        <label for="nome_mercado" class="label">Nome do Mercado:</label>
+                    </div><br>
+                    
+                    <div class="div_input">
+                        <input type="text" name="telefone" id="telephone" class="input" required>
+                        <label for="telefone" class="label">Telefone:</label>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="text" name="cidade" id="city" class="input" required>
+                        <label for="cidade" class="label">Cidade:</label>
+                    </div><br>
+                        
+
+                    <div class="div_flex">
+
+                        <div class="div_input2">
+                            <input type="text" name="estado" id="district" class="input2" required>
+                            <label for="estado" class="label">Estado:</label>
+                        </div>
+
+                        <div class="div_input2">
+                            <input type="text" name="rua" id="address" class="input2" required>
+                            <label for="rua" class="label">Rua:</label>
+                        </div>
+                    </div>
+
+                    <div class="div_input">
+                        <input type="text" name="numero" id="number" class="input" required>
+                        <label for="numero" class="label">N°:</label>
+                    </div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                    <INPUT TYPE="submit" VALUE="Cadastrar" class="button1"></INPUT>
+
+                    
+                </form>
+            </div>
+
+
+    	   <div class="div2">
+                <img src="../images/cadastro-mercado-imagem.png" class="img_cadastrar">
+                <img src="../images/fundo_mercado.png" class="fundo_mercado">
+                <div class="cadastrar">
+                    <img src="../images/icon.png" class="logo">
+    				<p class="p3">Já tem uma conta, <font color="#f15a23">lojista</font>?</p>
+    				<INPUT TYPE="submit" VALUE="Logar" class="button2" id="redirectPartner"></INPUT>
+                </div>
+            </div>	
+
+
+
+
+
+
+            
+    	</div>
+    </body>
+</html>

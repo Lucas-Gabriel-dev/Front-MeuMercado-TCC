@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*Pesquisar*/
+
+
+.pesquisa {
+
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    align-items: center;
+}
+
+.icon {
+    width: 8rem;
+}
+
+.container_pesquisar {
+    background-color: rgb(242, 100, 32);
+    border: 0;
+    width: 84%;
+    height: 3rem;
+    position: relative;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 10%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    outline: none;
+    padding-left: 1.5rem;
+    font-size: 16px;
+    position: relative;
+    left: 1%;
+    box-sizing: border-box;
+    transition-duration: 2s;
+}
+
+.search:hover {
+    transition-duration: 1s;
+    width: 12%;
+}
+
+.search:focus {
+    transition-duration: 2s;
+    width: 30%;
+}
+
+
+
+
+/*Nav Bar*/
+
+
+.nav {
+    width: 100%;
+    height: 38px;
+    background-color: rgb(200, 196, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+li {
+    padding: 0 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+
+a {
+    font-weight: bold;
+    font-family: monospace;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(242, 100, 32);
+    text-decoration: underline;
+    font-size: 26px;
+    transition-duration: 0.2s;
+
+}
+
+/*Conteúdo*/
+
+.container {
+    width: 65%;
+    height: 35rem;
+    background: rgb(244, 240, 230);
+    position: relative;
+    top: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .8rem;
+    box-shadow: 1px 1px 20px rgb(184, 182, 182);
+}
+
+.img_div1 {
+    width: 68%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3%;
+    margin-top: 2%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.div2 {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.box_produtos {
+    height: 100%;
+    width: 64%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.item {
+    width: 96%;
+    height: 5rem;
+    background: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.img_item{
+    height: 3.2rem;
+}
+.p1_elements{
+    cursor: default;
+    color: rgb(54, 53, 52);
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+
+.quant{
+    outline: none;
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.box_pagamento {
+    height: 100%;
+    width: 28%;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.elements_div1 {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.p2_elements, .p3_elements {
+    width: 40%;
+    cursor: default;
+    color: rgb(54, 53, 52);
+    font-weight: bold;
+    font-family: arial;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+.p3_elements{
+    color: rgb(148, 148, 147);
+}
+
+
+.elements_div2 {
+    margin-top: 2.7rem;
+    position: relative;
+
+}
+
+
+.label_elements, .input_elements {
+    color: rgb(54, 53, 52);
+    font-weight: bold;
+    font-family: arial;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.input_elements{
+    width: 100%;
+    height: 1.5rem;
+    outline: none;
+    padding-left: .5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid rgb(54, 53, 52);
+    margin-top: .2rem;
+    font-size: .7rem;
+    text-align: center;
+}
+
+option{
+    font-size: 13px;
+}
+
+hr {
+    margin-top: 2.2rem;
+    margin-bottom: .4rem;
+    border-color: orangered;
+    border-bottom: 0;
+}
+
+.elements_div4, .elements_div5 {
+    margin-bottom: .1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.button {
+    width: 55%;
+    height: 2rem;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1rem;
+    border-radius: .8rem;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background-color: rgb(85, 142, 109);
+}
+
+.button:hover {
+    background-color: rgb(60, 99, 76);
+}
+
+
+
+
+.div3 {
+    width: 100%;
+    height: 10%;
+    justify-content: flex-start;
+}
+
+.p_voltar {
+    color: rgb(54, 53, 52);
+    position: relative;
+    top: 50%;
+    left: 2.4rem;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-family: arial;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 15.2rem;
+}
+
+.p_voltar:hover {
+    color: rgb(77, 137, 102);
+}

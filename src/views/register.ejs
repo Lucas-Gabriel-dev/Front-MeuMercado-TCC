@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Meu Mercado - Registre-se</title>
+        
+        <link rel="stylesheet" href="/styles/cadastrar.css">
+        <link rel="icon" type="imagem/png" href="../images/favicon-32x32.png" />
+
+        
+	    <script defer src="/scripts/modules/register.js"></script>
+    </head>
+    <body>
+    	<div class="container">
+    		<div class="div1">
+                <img src="../images/cad.png" class="cad_img">
+
+                <form action="javascript: Send()" method="post">
+                <p id="emailInvalid"></p>
+
+                    <div class="div_input">
+                        <input type="text" id="name" name="nome" class="input" required>
+                        <label for="nome" class="label">Nome completo:</label>
+                    </div><br>
+                    
+                    <div class="div_input">
+                        <input type="text" id="email" name="email" class="input" required>
+                        <label for="email" class="label">E-mail:</label>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="password" id="password" name="senha" class="input" required>
+                        <label for="senha" class="label">Senha:</label>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="number" id="telephone" name="telefone" class="input" required max="12999999999" min="0">
+                        <label for="telefone" class="label">Telefone:</label>
+                    </div>
+                    <div class="div_data">    
+                        <label for="data_nascimento" class="label_data"><b>Data de Nascimento:</b></label>
+                        <input type="date" id="birthdate" name="data_nascimento" class="data" max="2016-12-31" min="1900-01-01" required>
+                    </div>
+                        
+                    <div class="div_input">
+                        <!--<input type="text" name="cidade" class="input" required>-->
+                                           
+                        <select id="city" class="input2">
+                        <elects class="list" onchange="getSelectValue();" value="">
+                            <option value="" class="select">--Selecione--</option>
+                            <option value="">Pindamonhangaba</option>
+                            <option value="">Taubaté</option>
+                            <option value="">Tremembé</option>
+                            <option value="">Caçapava</option>
+                        </elects>
+                        </select>
+                        <label for="cidade" class="label">Município:</label>
+
+                        <script>
+                            
+                            function getSelectValue()
+                            {
+                                var selectedValue = document.getElementByClass("list").value;
+                                console.log(selectedValue);
+                            }
+                            getSelectValue();
+
+                        </script>
+                    </div><br>
+
+                    <div class="div_flex">
+                        <div class="div_input">
+                            <input type="text" id="address" name="endereco" class="input2" required>
+                            <label for="endereco" class="label">Endereço:</label>
+                        </div>
+
+                        <div class="div_input">
+                            <input type="text" id="district" name="bairro" class="input2" required>
+                            <label for="bairro" class="label">Bairro:</label>
+                        </div>
+                    </div><br>
+
+                    <div class="div_flex">
+                        <div class="div_input">
+                            <input type="text" id="number" name="numero" class="input2" required>
+                            <label for="numero" class="label">N°:</label>
+                        </div>
+
+                        <div class="div_input">
+                            <input type="text" id="complement" name="complemento" class="input2" required>
+                            <label for="complemento" class="label">Complemento:</label>
+                        </div>
+                    </div><br>
+
+                    <div class="div_input">
+                        <input type="text" id="cep" name="cep" class="input" required>
+                        <label for="cep" class="label">CEP:</label>
+                    </div><br>
+                            
+                    <INPUT TYPE="submit" VALUE="Cadastrar" class="button1"></INPUT>
+                    
+                </form>
+                
+                <a href="/PartnerRegister" class="partner" id="a_div1"><p>Quero cadastrar meu supermercado</p></a>
+            </div>
+            
+    	   <div class="div2">
+                <img src="../images/mercado.png" class="img_cadastrar">
+                <img src="../images/fundo_mercado.png" class="fundo_mercado">
+                <div class="cadastrar">
+                    <img src="../images/icon.png" class="logo">
+    				<p class="p3">Já tem uma conta?</p>
+    				<INPUT TYPE="submit" VALUE="Logar" class="button2" id="buttonRedirec"></INPUT>
+                </div>
+            </div>	
+    	</div>
+    </body>
+</html>

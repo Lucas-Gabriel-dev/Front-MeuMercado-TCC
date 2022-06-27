@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Pesquisar*/
+
+
+.pesquisa{
+    display: flex;
+    height: 5rem;
+    width: 30%;
+    margin-bottom: 0.2rem;
+    align-items: center;
+}
+
+.icon{ 
+    position: relative;
+    left: 10%;
+    width: 8rem;
+}
+.p1{
+    position: absolute;
+    top: 40px;
+    left: 11.5rem;
+    width: 40rem;
+
+}
+
+
+/*Nav Bar*/
+
+
+.nav{
+    width: 100%;
+    height: 38px;
+    background-color: rgb(200, 196, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+li{
+    padding: 0 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+
+a{	font-weight: bold;
+    font-family: monospace;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(77, 137, 102);
+    font-size: 26px;
+    transition-duration: 0.2s;
+
+}
+
+
+
+
+/*Body*/
+
+.container{
+    width: 90%;
+    height: 34rem;
+    position: relative;
+    left: 50%;
+    top: 4rem;
+    transform: translate(-50%/*, -50%*/);
+    display: flex;
+    justify-content: space-around;
+}
+.div1{
+    /* background-color: rgb(77, 137, 102); */
+    width: 56%;
+    height: 100%;
+    border-right: 1px solid rgba(77, 137, 102, 0.664);
+    align-items: center;
+    	
+    /* border-radius: 1rem; */
+    display: flex;
+
+    flex-direction: column;
+}
+
+.div1 img{
+    width: 80%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div1 .itemPrincipal .moreInfo{
+    width: 82%;
+    
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    /* margin-right: 10%; */
+}
+
+.div1 .itemPrincipal .moreInfo .price{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2%;
+
+    text-align: center;
+    align-self: center;
+}
+
+.div1 .itemPrincipal .moreInfo .estoque{
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 2%;
+
+    text-align: center;
+    align-self: center;
+
+    border: 1px solid rgb(77, 137, 102);
+    border-radius: 15px;
+}
+
+.div1 .ProductName:hover{
+    color: rgb(77, 137, 102);
+}
+
+.div2{
+    width: 36%;
+    height: 120%;
+    position: relative;
+    display: table-cell;
+}
+
+.adicionar{
+    height: 2.5rem;
+    width: 100%; 
+    top: -2.8rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.p{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.6rem;
+    color: rgb(77, 137, 102);
+}
+.button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(77, 137, 102);
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 1rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+
+.button:hover{
+    transition: .2s;
+    background-color: rgb(133, 132, 128); 
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.2rem;
+}
+
+.produtos{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 99%;;
+    padding-right: 1%;
+    position: relative;
+}
+
+.produtos img{
+    width: 50%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div2 #moreInfo2{
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 2% 0px;
+}
+
+.div2 #moreInfo2 .price{
+    font-size: 20px;
+
+    padding: 2%;
+
+    text-align: center;
+    align-self: center;
+}
+
+.div2 #moreInfo2 .estoque{
+    margin-right: 5%;
+
+    padding: 2%;
+
+    text-align: center;
+    align-self: center;
+
+    border: 1px solid rgb(77, 137, 102);
+    border-radius: 15px;
+}
+
+.produtos::-webkit-scrollbar {
+    width: 0.5rem;
+    
+}
+.produtos::-webkit-scrollbar-track {
+    background: rgb(223, 219, 210);
+    border-radius: 2rem;   
+    width: 1rem;     
+  }
+ 
+.produtos::-webkit-scrollbar-thumb {
+    background-color: rgb(133, 132, 128);   
+    border-radius: 1rem;       
+    border: 2px solid rgb(223, 219, 210);
+}
+
+
+.item{
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(77, 137, 102);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.itemSelected{
+    width: 100%;
+}
+
+.itemSelected img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemSelected #moreInfo{
+    font-size: 25px;
+
+    text-align: justify;
+
+    padding: 2% 10%;
+}
+
+.itemSelected #moreInfo #title{
+    text-align: center;
+
+    margin-bottom: 2%;
+
+    font-weight: bold;
+}
+
+#error{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#error a{
+    font-weight: bold;
+	font-family: monospace;
+	color: white;
+	width: 150px;
+    height: 40px;
+	background-color: rgb(85, 142, 109);
+	border-radius: 6px;
+	border: 0;
+	font-size: 25px;
+	
+    text-align: center;
+}
+
+#error a:hover{
+	background-color: rgb(60, 99, 76);
+
+    cursor: pointer;
+}
+	
